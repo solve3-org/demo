@@ -1,0 +1,156 @@
+.bg-purple {
+  background-color: #441953;
+}
+
+.bg-darkish {
+  background-color: #320b40;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  align-items: stretch;
+  /* Ensures children take full width */
+
+}
+
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+
+.fat {
+  font-weight: 700;
+}
+
+.chubby {
+  font-weight: 500;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.align-right {
+  text-align: right;
+  justify-content: end;
+  align-items: end;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brandname {
+  display: flex;
+  position: relative;
+
+  align-items: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+
+.header {
+  min-height: 50px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 0px;
+  /* pin to top */
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background-color: #441953;
+}
+
+.header-spacer {
+  height: 60px;
+}
+
+.header-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.header-left, .header-right {
+  padding: 10px;
+}
+
+.header-left {
+  text-align: left;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.white-line {
+  width: 95%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.white-line-short {
+  width: 75%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+
+.fullwidth {
+  min-width: 100vw;
+}
+
+.fullheight {
+  min-height: 100vh;
+}
+
+.test {
+  background-color: aqua;
+}
+
+
+/* weird rainbow stuff */
+
+.ju367v7o {
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.05em;
+
+  color: rgba(255, 255, 255, 0.85) !important;
+
+  padding: 8px 25px !important;
+  height: auto !important;
+
+  box-shadow: 0 0 3px rgba(229, 223, 232, 0.2) !important;
+  background: linear-gradient(0deg, #5e2374 0%, #ad33cc 100%) !important;
+
+  border-radius: 5px !important;
+}
