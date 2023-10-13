@@ -10,7 +10,7 @@ const Connect = () => {
           chainStatus="icon"
           showBalance={false}
 
-          style={{ maxWidth: "500px" }}
+          // style={{ maxWidth: "500px" }}
         />
       </div>
     </div>
