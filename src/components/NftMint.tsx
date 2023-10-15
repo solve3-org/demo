@@ -10,7 +10,7 @@ const NftMint = () => {
   const onClickHandler = async () => {
     const messageToSign: string = await solve3.init({
       account: address as string,
-      destination: address as string,
+      destination: "0xA302C05731EA1652E21fB2579bB7C137055Ce0D6",
       network: 5,
     });
 
