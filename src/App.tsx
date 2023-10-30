@@ -8,15 +8,15 @@ import {
   darkTheme,
 } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { mainnet, polygon, optimism, arbitrum } from "wagmi/chains";
+import { mainnet, polygon, optimism, arbitrum, goerli } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 
 import Header from "./components/Header";
-import NftMint from "./components/NftMint";
+import Demo from "./components/Demo";
 
 const { chains, publicClient } = configureChains(
-  [mainnet, polygon, optimism, arbitrum],
+  [goerli, mainnet, polygon, optimism, arbitrum],
   [publicProvider()],
   // [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()],
 );
@@ -39,7 +39,7 @@ function App() {
       <RainbowKitProvider theme={darkTheme()} chains={chains}>
         <div className="App">
           <Header />
-          <NftMint />
+          <Demo />
         </div>
       </RainbowKitProvider>
     </WagmiConfig>

@@ -1,9 +1,9 @@
 .bg-purple {
-  background-color: #441953;
+  background-color: #9849b4;
 }
 
 .bg-darkish {
-  background-color: #320b40;
+  background-color: #b24ad8;
 }
 
 .w-100 {
@@ -52,6 +52,10 @@
   font-weight: 300;
 }
 
+.smol {
+  font-size: 0.8rem;
+}
+
 .align-right {
   text-align: right;
   justify-content: end;
@@ -62,6 +66,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.no-deco {
+  text-decoration: none;
 }
 
 .brandname {
@@ -84,7 +92,7 @@
   position: fixed;
   top: 0;
   z-index: 10000;
-  background-color: #441953;
+  background-color: #ae4dd1;
 }
 
 .header-spacer {
@@ -107,6 +115,10 @@
 
 .header-right {
   text-align: right;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .white-line {
@@ -136,10 +148,29 @@
   background-color: aqua;
 }
 
+.light-bg {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  color: #9849b4;
+}
+
+.small-box {
+  width: 400px;
+}
+
+.button-k {
+  background-color: rgb(0, 146, 243);
+  cursor: pointer;
+  padding: 7px 20px 7px 20px;
+  max-width: 150px;
+  color: white;
+  border-radius: 5px;
+}
+
 
 /* weird rainbow stuff */
 
-.ju367v7o {
+/* .ju367v7o {
   font-weight: 500 !important;
   font-size: 1rem !important;
   letter-spacing: 0.05em;
@@ -149,8 +180,10 @@
   padding: 8px 25px !important;
   height: auto !important;
 
-  box-shadow: 0 0 3px rgba(229, 223, 232, 0.2) !important;
-  background: linear-gradient(0deg, #5e2374 0%, #ad33cc 100%) !important;
+  /* box-shadow: 0 0 3px rgba(229, 223, 232, 0.2) !important; */
+/* background: linear-gradient(0deg, #5e2374 0%, #ad33cc 100%) !important;
 
-  border-radius: 5px !important;
+border-radius: 5px !important;
 }
+
+*/
