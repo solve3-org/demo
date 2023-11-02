@@ -8,22 +8,42 @@ import {
   darkTheme,
 } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { mainnet, polygon, optimism, arbitrum, goerli } from "wagmi/chains";
-import { alchemyProvider } from "wagmi/providers/alchemy";
+import {
+  sepolia,
+  mainnet,
+  polygon,
+  optimism,
+  arbitrum,
+  goerli,
+  avalanche,
+  gnosis,
+  fantom,
+  base,
+} from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
 import Header from "./components/Header";
 import Demo from "./components/Demo";
 
 const { chains, publicClient } = configureChains(
-  [goerli, mainnet, polygon, optimism, arbitrum],
+  [
+    sepolia,
+    goerli,
+    mainnet,
+    optimism,
+    arbitrum,
+    polygon,
+    avalanche,
+    gnosis,
+    fantom,
+    base,
+  ],
   [publicProvider()],
-  // [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()],
 );
 
 const { connectors } = getDefaultWallets({
   appName: "Solve3 Demo",
-  projectId: "YOUR_PROJECT_ID",
+  projectId: "04a29ec4e1e9d2fad245a69fd837d257",
   chains,
 });
 
