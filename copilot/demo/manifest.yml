@@ -1,0 +1,29 @@
+name: demo
+type: Static Site
+
+files:
+  - source: dist/
+    recursive: true
+  - source: dist/index.html
+
+http:
+  path: /
+  alias: demo.solve3.org
+
+environments:
+  prod:
+    http:
+      path: '/'
+      alias: demo.solve3.org
+
+# You can override any of the values defined above by environment.
+# environments:
+#   test:
+#     files:
+#       - source: './blob'
+#         destination: 'assets'
+#         recursive: true
+#         exclude: '*'
+#         reinclude:
+#           - '*.txt'
+#           - '*.png'

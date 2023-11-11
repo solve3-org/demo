@@ -24,6 +24,8 @@ import { publicProvider } from "wagmi/providers/public";
 
 import Header from "./components/Header";
 import Demo from "./components/Demo";
+import { alchemyProvider } from "wagmi/providers/alchemy";
+import { infuraProvider } from "wagmi/providers/infura";
 
 const { chains, publicClient } = configureChains(
   [
@@ -38,7 +40,11 @@ const { chains, publicClient } = configureChains(
     fantom,
     base,
   ],
-  [publicProvider()],
+  [
+    alchemyProvider({ apiKey: "ajWJk5YwtfTZ5vCAhMg8I8L61XFhyJpa" }),
+    infuraProvider({ apiKey: "ae484befdd004b64bfe2059d3526a138" }),
+    publicProvider(),
+  ],
 );
 
 const { connectors } = getDefaultWallets({

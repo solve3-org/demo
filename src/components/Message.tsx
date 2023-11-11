@@ -4,6 +4,7 @@ import {
   useContractRead,
   useContractWrite,
   useWaitForTransaction,
+  useNetwork,
 } from "wagmi";
 import { Solve3 } from "@solve3/captcha";
 import { abi } from "./abi";
@@ -12,10 +13,12 @@ import BeatLoader from "react-spinners/BeatLoader";
 
 const Message = () => {
   const messageContract: `0x${string}` =
-    "0x5EA2B26076B212e809e4C80a2F7a00F441784A50";
+    "0xf7C9Bd689891F42fc65CFfd551A19b75326eB38b";
 
   const { signMessageAsync } = useSignMessage();
   const { address, isConnected } = useAccount();
+  const { chain } = useNetwork();
+
   const [message, setMessage] = useState<string>("");
 
   const { data: readData, refetch } = useContractRead({
@@ -37,13 +40,13 @@ const Message = () => {
     refetch();
   }, [isLoading]);
 
-  const solve3 = new Solve3("http://localhost:6969");
+  const solve3 = new Solve3();
 
   const onClickHandler = async () => {
     const messageToSign: string = await solve3.init({
       account: address as string,
       destination: messageContract,
-      network: 5,
+      network: chain?.id as number,
     });
 
     const signature = await signMessageAsync({ message: messageToSign });
@@ -59,7 +62,7 @@ const Message = () => {
   return (
     <>
       {isConnected && (
-        <div className="pad-20 marb-40 small-box light-bg flex-center">
+        <div className="pad-20 mart-20 marb-40 small-box light-bg flex-center">
           <div className="text-center">
             <h3>Current Message:</h3>
           </div>
