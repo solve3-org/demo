@@ -56,6 +56,7 @@ const Message = () => {
       setMessage("");
     });
 
+    console.log(signature);
     await solve3.open(signature);
   };
 
