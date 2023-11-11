@@ -17,7 +17,7 @@
     "wagmi": "^1.4.5"
   },
   "devDependencies": {
-    "@solve3/captcha": "^1.0.6",
+    "@solve3/captcha": "^1.0.7",
     "@types/react": "^18.2.35",
     "@types/react-dom": "^18.2.14",
     "@typescript-eslint/eslint-plugin": "^6.9.1",

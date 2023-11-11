@@ -673,10 +673,10 @@
     rpc-websockets "^7.5.1"
     superstruct "^0.14.2"
 
-"@solve3/captcha@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@solve3/captcha/-/captcha-1.0.6.tgz#0b6f1ad2acfebc7b21e28cff33cc7f9480fb4dcc"
-  integrity sha512-sCwhgAIl3bxA9VrJ15r1c+hECW5WpJ0tWBsB9CQDWP6cPgnMag6rEqioM21ic8IuQJCMS0YZpSILcPil7rnO6g==
+"@solve3/captcha@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@solve3/captcha/-/captcha-1.0.7.tgz#ace28ff6f6b53f43239143724c85b8ec90165eef"
+  integrity sha512-akVYRtF1YdUNR688kocPXXa5yOxtxnJgGZRMsLWjzOXTN7ftXQWeMMLHc5czKOwOJuZjO5TAmrx0DgEgMz52bw==
   dependencies:
     events "^3.3.0"
 
